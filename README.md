@@ -199,7 +199,7 @@ Contributions are welcome! Please follow these steps:
 
 For questions or feedback, please open an issue or contact the maintainer:
 - **Henry Mbugua**
-- **Email**: [Henry Mbugua](https://www.linkedin.com/in/henrymbugua/)
+- **LinkedIn**: [Henry Mbugua](https://www.linkedin.com/in/henrymbugua/)
 - **GitHub**: [henrymbuguak](https://github.com/henrymbuguak)
 
 ---
