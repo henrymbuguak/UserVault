@@ -155,6 +155,42 @@ A lightweight and scalable **User Management Microservice** built with **Flask**
 
 ---
 
+
+## Example cURL Commands
+
+### **1. Create a New User**
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"username": "testuser", "email": "test@example.com", "password": "testpass"}' http://127.0.0.1:5000/api/users
+```
+
+### **2. Log in to Get a JWT Token**
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"username": "testuser", "password": "testpass"}' http://127.0.0.1:5000/api/login
+```
+
+### **3. Fetch All Users (Protected Route)**
+Replace `<your-access-token>` with the token received from the login response.
+```bash
+curl -H "Authorization: Bearer <your-access-token>" http://127.0.0.1:5000/api/users
+```
+
+### **4. Fetch a Specific User by ID**
+```bash
+curl -H "Authorization: Bearer <your-access-token>" http://127.0.0.1:5000/api/users/1
+```
+
+### **5. Update a User**
+```bash
+curl -X PUT -H "Authorization: Bearer <your-access-token>" -H "Content-Type: application/json" -d '{"username": "updateduser", "email": "updated@example.com"}' http://127.0.0.1:5000/api/users/1
+```
+
+### **6. Delete a User**
+```bash
+curl -X DELETE -H "Authorization: Bearer <your-access-token>" http://127.0.0.1:5000/api/users/1
+```
+
+---
+
 ## Environment Variables
 
 The application uses the following environment variables:
